@@ -19,15 +19,20 @@
         border-color: #8a2530 !important;
         box-shadow: none;
     }
-    #trabajos-mobile{
-        display: none;
+   #servicios-mobile{
+    display: none;
+   }
+    .card{
+        margin: 1rem!important;
+        border: none!important;
     }
-    
-    @media screen and (max-width: 767px) {
-        #trabajos-mobile{
+
+    @media (max-width: 767px) {
+        #servicios-mobile{
             display: block;
-        }
-        #trabajos{
-            display: none
-        }
+           }
+           #servicios{
+            display: none;
+           }
+      
     }

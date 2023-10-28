@@ -8,13 +8,15 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import {RouterOutlet} from "@angular/router";
 import { DatePipe } from '@angular/common';
+import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopHeadComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    WhatsappButtonComponent
   ],
   imports: [
     BrowserModule,

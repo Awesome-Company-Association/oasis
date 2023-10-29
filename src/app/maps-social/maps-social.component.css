@@ -1,3 +1,54 @@
 .subtitle {
     text-align: center;
 }
+
+.map {
+    width: 480px;
+    height: 350px;
+}
+
+.sub-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    height: 20rem;
+}
+
+.contact-item{
+    margin: 1rem;
+}
+
+.icons {
+    font-size: 1.8rem;
+    margin: 0 1rem 0 0;
+}
+
+@media (max-width: 767px) {
+    .sub-container{
+        flex-direction: column;
+    }
+    .map {
+        width: 250px;
+        height: 200px;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .contact-item{
+        margin: 0;
+    }
+  
+}

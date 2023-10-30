@@ -10,6 +10,7 @@ import {RouterOutlet} from "@angular/router";
 import { DatePipe } from '@angular/common';
 import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 import { MapsSocialComponent } from './maps-social/maps-social.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapsSocialComponent } from './maps-social/maps-social.component';
     BodyComponent,
     FooterComponent,
     WhatsappButtonComponent,
-    MapsSocialComponent
+    MapsSocialComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

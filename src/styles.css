@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.opcionesColores{
+    color: #879184;
+    color: #4FA345;
+    color: #F4FCF1;
+    color: #98AF92;
+
+}
+
+body {
+    background-color: #F4FCF1;
+}

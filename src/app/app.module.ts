@@ -11,6 +11,7 @@ import { DatePipe } from '@angular/common';
 import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 import { MapsSocialComponent } from './maps-social/maps-social.component';
 import { GridComponent } from './grid/grid.component';
+import { BigNavbarComponent } from './big-navbar/big-navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GridComponent } from './grid/grid.component';
     FooterComponent,
     WhatsappButtonComponent,
     MapsSocialComponent,
-    GridComponent
+    GridComponent,
+    BigNavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,38 +1,80 @@
 .carousel-img{
     padding: 1rem;
     margin-top: 2rem;
-    }
-    .seccion{
-        text-align: center;
-        margin-top: 2rem;
-    }
-    .pres-img{
-        width: 100%;
-    }
-    .subtitle{
-        text-align: center;
-    }
-    .accordion-button:not(.collapsed) {
-        background-color: white !important;
-    }
-    .accordion-button:focus {
-        border-color: #8a2530 !important;
-        box-shadow: none;
-    }
-   #servicios-mobile{
+}
+.seccion{
+    text-align: center;
+    margin-top: 2rem;
+}
+.pres-img{
+    width: 100%;
+}
+.subtitle{
+    text-align: center;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+}
+.accordion-button:focus {
+    border-color: #8a2530 !important;
+    box-shadow: none;
+}
+#servicios-mobile{
     display: none;
-   }
-    .card{
-        margin: 1rem!important;
-        border: none!important;
-    }
+}
+.card{
+    margin: 1rem!important;
+    border: none!important;
+}
 
-    @media (max-width: 767px) {
-        #servicios-mobile{
-            display: block;
-           }
-           #servicios{
-            display: none;
-           }
-      
+@media (max-width: 767px) {
+    #servicios-mobile{
+        display: block;
     }
+    #servicios{
+        display: none;
+    }
+}
+
+#carouselServicios {
+    margin: 1rem 0;
+}
+
+.carousel-item img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe el 100% de la altura del contenedor */
+    object-fit: contain; /* Mantiene la relación de aspecto y ajusta la imagen dentro del contenedor */
+    object-position: center; /* Muestra el centro de la imagen en el contenedor */
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -3rem; /* Ajusta la distancia desde la parte inferior del contenedor */
+    left: 50%; /* Centra los indicadores horizontalmente */
+    transform: translateX(-65%); /* Centra los indicadores horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que los indicadores estén centrados en el contenedor */
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #879184; /* Color de fondo para los puntos */
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #4FA345; /* Color de fondo para el punto activo */
+}
+
+/* Cambiar el color de las flechas del carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    /* filter: invert(100%); /*esto hace flechas negras */
+    display: none;
+}

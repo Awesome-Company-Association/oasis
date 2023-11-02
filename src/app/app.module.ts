@@ -8,13 +8,21 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import {RouterOutlet} from "@angular/router";
 import { DatePipe } from '@angular/common';
+import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
+import { MapsSocialComponent } from './maps-social/maps-social.component';
+import { GridComponent } from './grid/grid.component';
+import { BigNavbarComponent } from './big-navbar/big-navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopHeadComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    WhatsappButtonComponent,
+    MapsSocialComponent,
+    GridComponent,
+    BigNavbarComponent
   ],
   imports: [
     BrowserModule,

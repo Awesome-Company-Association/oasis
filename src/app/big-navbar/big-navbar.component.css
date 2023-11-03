@@ -20,46 +20,31 @@
 .logo-container {
     position: relative;
     z-index: 1;
+    display: inline-block;
 }
 
-.logo-container::before {
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    z-index: -1;
-    background-color: white;
-    top: 48%;
-    left: 18.5%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px 0px white;
-    filter: blur(20px);
+.light-dot {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  z-index: -1;
+  background-color: white;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 0px white;
+  filter: blur(20px);
 }
 
 .logo-fasta {
-    position: relative;
-    width: 12rem;
-    padding: 0.5rem;
-    padding-left: 2rem;
-    padding-top: 0;
+  width: 20rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-top: 0;
+  filter: brightness(0%) invert(1);
+  mix-blend-mode: difference;
 }
-
-.logo-fasta2 {
-    position: relative;
-    width: 20rem;
-    padding: 0.5rem;
-    padding-left: 2rem;
-    padding-top: 0;
-
-    filter: brightness(15%) invert(1);
-   
-    /* mix-blend-mode: lighten; */
-    mix-blend-mode: difference;
-    /* mix-blend-mode: hard-light; */
-    /* mix-blend-mode: screen; */
-    /* mix-blend-mode: soft-light; */
-    /* mix-blend-mode: darken; */
-  }
   
   .navbar ul.menu {
     display: flex;
@@ -128,14 +113,6 @@
 
     .header-top {
         padding: 3rem 1rem;
-    }
-
-    .logo-container::before {
-        top: 46%;
-        left: 68%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0px 0px 20px 0px white;
-        filter: blur(20px);
     }
 }
   

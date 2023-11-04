@@ -1,30 +1,30 @@
 .header-top {
-    padding: 7rem 1rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../assets/images/fotos/IMG-20231030-WA0035.jpg);
-    background-position: center calc(50% - 50px);
-    position: relative;
+  padding: 1.5rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/fotos/IMG-20231030-WA0035.jpg);
+  background-position: center calc(50% - 50px);
+  position: relative;
 }
 
 .header-top::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo-container {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
 }
 
 .light-dot {
-  content: '';
+  content: "";
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -45,74 +45,92 @@
   filter: brightness(0%) invert(1);
   mix-blend-mode: difference;
 }
-  
+
+.navbar ul.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: white;
+  list-style-type: none;
+}
+
+li {
+  margin: 1rem;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.mobile-menu {
+  display: none; /* Oculta el menú móvil inicialmente */
+}
+
+.menu {
+  margin-top: 3rem;
+}
+
+/* Media query para pantallas con ancho menor a 590px */
+@media screen and (max-width: 700px) {
   .navbar ul.menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    color: white;
-    list-style-type: none;
+    display: none; /* Oculta el menú horizontal */
   }
-  
-  li {
-    margin: 1rem;
-    list-style-type: none;
+  .hamburger-menu {
+    display: block; /* Muestra el menú hamburguesa */
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 15px;
   }
-  
-  a {
-    text-decoration: none;
-    color: white;
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
   }
   .mobile-menu {
     display: none; /* Oculta el menú móvil inicialmente */
   }
-  
-  /* Media query para pantallas con ancho menor a 590px */
-  @media screen and (max-width: 700px) {
-    .navbar ul.menu {
-      display: none; /* Oculta el menú horizontal */
-    }
-    .hamburger-menu {
-      display: block; /* Muestra el menú hamburguesa */
-      cursor: pointer;
-      padding: 15px;
-      position: absolute;
-      right: 0;
-      top: 15px;
-    }
-    .bar {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 5px 0;
-    }
-    .mobile-menu {
-      display: none; /* Oculta el menú móvil inicialmente */
-    }
-    .mobile-menu.active {
-      display: block; /* Muestra el menú móvil cuando está activo */
-      position: absolute;
-      top: 4rem;
-      right: 0;
-      background-color: #879184;
-      width: 68%;
-      padding: 1rem 0;
-    }
-    .mobile-menu li {
-      margin: 0;
-      padding: 0.5rem;
-    }
-    .mobile-menu li a {
-      color: white;
-    }
-    .close-menu {
-      text-align: right;
-      padding: 1rem;
-      cursor: pointer;
-    }
+  .mobile-menu.active {
+    display: block; /* Muestra el menú móvil cuando está activo */
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: #879184;
+    width: 68%;
+    padding: 1rem 0;
+  }
+  .mobile-menu li {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .mobile-menu li a {
+    color: white;
+  }
+  .close-menu {
+    text-align: right;
+    padding: 1rem;
+    cursor: pointer;
+  }
 
-    .header-top {
-        padding: 3rem 1rem;
-    }
+  .logo-container {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  .light-dot {
+    top: 50%;
+    left: 50%;
+  }
+
+  .logo-fasta {
+    width: 10rem;
+    padding: 0.5rem;
+    padding-top: 0;
+    filter: brightness(0%) invert(1);
+    mix-blend-mode: difference;
+  }
 }
-  
